@@ -1,0 +1,139 @@
+html, body {
+	box-sizing: content-box;
+	margin: 0;
+	font-family: "Helvetica Neue", serif;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.centered {
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -40%);
+}
+
+.title {
+	text-align: center;
+	color: white;
+	font: {
+		size: 3.5em;
+		weight: 300;
+	}
+}
+
+.sub-title {
+	color: lightgray;
+	text-align: center;
+
+	padding: {
+		top: 10px;
+		bottom: 30px;
+	}
+	
+	font: {
+		size: 1.5em;
+		weight: lighter;
+	}
+}
+
+.ye-btn {
+	border-radius: 30px !important;
+	padding: 11px 30px !important;
+	margin-top: 11px;
+	margin-bottom: 11px;
+	border-width: 2px !important;
+	width: 150px;
+}
+
+.ye-outline {
+	border: 2px solid #fff !important;
+	color: #fff !important;
+}
+
+.ye-outline:hover, .ye-outline:active, .ye-outline:focus {
+	opacity: 0.75;
+}
+
+.nav a:hover {
+	color: white;
+}
+
+.main-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	.background {
+		z-index: -1;
+		background: {
+			image: url("../images/home-bg.jpeg");
+			size: cover;
+			position: center; /* Center the image */
+			repeat: no-repeat; /* Do not repeat the image */
+		};
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		&:after {
+			content: "";
+			background: inherit;
+
+
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+
+			filter: blur(2px);
+		}
+
+	}
+
+}
+
+
+.footer-container {
+	/*background-color: rgba(0, 0, 0, 0.3);*/
+	width: 100%;
+	height: 40px;
+
+	.background {
+		background-color: rgba(0, 0, 0, 0.3);
+		width: 100%;
+		height: 40px;
+		/*filter: blur(1px);*/
+		border-top-width: 1px;
+		border: {
+			top-color: black;
+			top-width: 1px;
+		}
+	}
+
+	.begin {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	.end {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+}
+
+
+
+
+
+
