@@ -160,7 +160,7 @@ ol#footnotes:before {
 }
 
 ol p, ul p {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 li {
